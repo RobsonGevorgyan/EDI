@@ -1,0 +1,99 @@
+body {
+    background-color: #2b2d42;
+    background-size : 100% auto;
+}
+
+#content {
+    width: 70%;
+    margin: auto;
+    
+}
+
+#banner {
+    background-color: #d90429;
+    font-size: 300%;
+    font-family: 'Oswald', sans-serif;
+    padding: 2%;
+    text-align: center;
+    border-radius: 15px;
+    text-shadow: 2px 2px 5px #8d99ae;
+    border: 2px #edf2f4 solid;
+}
+
+#authors {
+    background-color: #8d99ae;
+    margin-top: 2%;
+    border-radius: 15px;
+    border: 2px #edf2f4 solid;
+    display: flex;
+    text-align: center;
+    padding-top: 2%;;
+}
+
+img {
+    width: 60%;
+    border-radius: 100%;
+    border: 2px #edf2f4 solid;
+}
+
+.author-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    text-shadow: 2px 2px 5px #242424;
+}
+
+#table {
+    background-color: #8d99ae;
+    margin-top: 2%;
+    border-radius: 15px;
+    border: 2px #edf2f4 solid;
+    padding: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #7a8ba8;
+}
+
+td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tr:nth-child(odd) {
+    background-color: #8d99ae;
+}
+
+tr:nth-child(even) {
+    background-color: #7a8ba8;
+}
+
+#charts {
+    background-color: #8d99ae;
+    margin-top: 2%;
+    border-radius: 15px;
+    border: 2px #edf2f4 solid;
+    padding: 1%;
+    overflow: hidden;
+}
+
+#barchart {
+    float: left;
+    width: 65%;
+}
+
+#piechart {
+    float: left;
+    width: 32%;
+}
+
+

@@ -8,18 +8,33 @@
         <!--Reference to a google fonts api allowing to use custom fonts-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
         <title>FINAL GROUP PROJECT</title>
     </head>
         
     <body>
         <div id="content">
-            <div id="banner">FINAL GROUP PROJECT</div>
+            <div id="banner"><i class="material-icons" style="font-size:78%;">flight</i> FINAL GROUP PROJECT <i class="material-icons" style="font-size:78%;">flight</i></div>
             
             <!--Section containing informations about project authors-->
             <div id="authors">
-                <div class="author-box">
-                    <img id="author-photo" alt="Author photo" src="https://cdn.pixabay.com/photo/2016/03/31/17/33/avatar-1293744_1280.png">
-                    <p id="author-name">Dup</p>
+                <div id="author1">
+                    <img class="author-photo1" alt="Author photo" src="assets/robert.png">
+                    <p class="author-name">Robert Geworgjan</p>
+                </div>
+                <div id="author2">
+                    <img class="author-photo2" alt="Author photo" src="assets/robert.png">
+                    <p class="author-name">Paweł Dziuba</p>
+                </div>
+                <div id="author3">
+                    <img class="author-photo1" alt="Author photo" src="assets/robert.png">
+                    <p class="author-name">Patryk Majdak</p>
+                </div>
+                <div id="author4">
+                    <img class="author-photo1" alt="Author photo" src="assets/robert.png">
+                    <p class="author-name">Paweł Kołodziejczyk</p>
                 </div>
             </div>
 
@@ -58,7 +73,8 @@
         <!--Reference to an external JavaScript file-->
         <script src="fetchdata.js"></script>
         <script>
-            requestData("https://my.api.mockaroo.com/flight-logs.json?key=64d8f970");
+            // requestData("https://my.api.mockaroo.com/flight-logs.json?key=64d8f970");
+            requestData("https://my.api.mockaroo.com/flight_logs.json?key=99413a50&fbclid=IwAR1AdflhbWp8_AmjtVDLxIO3iA-cQh3ved5eeuZ6IEQJTbESV5ZzMYKoQGs");
         </script>
 
     </body>

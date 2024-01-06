@@ -45,7 +45,6 @@ function requestData(url) {
         });
 }
 
-
 function pieChart() {
     let airlineSet = [...new Set(airline)];
     let linePassengerCount = [0, 0, 0];
@@ -58,7 +57,6 @@ function pieChart() {
         }  
     }
 
-    
     var ctx = document.getElementById("piechart");
     var myChart = new Chart(ctx, {
         type: 'pie',
