@@ -3,36 +3,41 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name= "author" content="Paweł Dziuba">
+        <meta name= "author" content="Paweł Dziuba, Robert Geworgjan, Patryk Majdak, Paweł Kołodziejczyk">
+        <!--Reference to external css file-->
         <link rel="stylesheet" type="text/css" href="style.css">
-        <!--Reference to a google fonts api allowing to use custom fonts-->
+        <!--Reference to a google fonts api allowing to use custom icons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Reference to a Chart.js framework-->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!--Reference to a google api allowing to use custom fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-        <title>FINAL GROUP PROJECT</title>
+        <!--Title and favicon-->
+        <title>Group project - Flight logs</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     </head>
         
     <body>
         <div id="content">
-            <div id="banner"><i class="material-icons" style="font-size:78%;">flight</i> FINAL GROUP PROJECT <i class="material-icons" style="font-size:78%;">flight</i></div>
+            <div id="banner"><i class="material-icons" style="font-size:78%;">flight</i> Group project - Flight logs <i class="material-icons" style="font-size:78%;">flight</i></div>
             
             <!--Section containing informations about project authors-->
             <div id="authors">
-                <div id="author1">
+                <div class="author-box">
                     <img class="author-photo1" alt="Author photo" src="assets/robert.png">
                     <p class="author-name">Robert Geworgjan</p>
                 </div>
-                <div id="author2">
-                    <img class="author-photo2" alt="Author photo" src="assets/robert.png">
+                <div class="author-box">
+                    <img class="author-photo2" alt="Author photo" src="assets/pawel.jpg">
                     <p class="author-name">Paweł Dziuba</p>
                 </div>
-                <div id="author3">
+                <div class="author-box">
                     <img class="author-photo1" alt="Author photo" src="assets/robert.png">
                     <p class="author-name">Patryk Majdak</p>
                 </div>
-                <div id="author4">
+                <div class="author-box">
                     <img class="author-photo1" alt="Author photo" src="assets/robert.png">
                     <p class="author-name">Paweł Kołodziejczyk</p>
                 </div>
@@ -59,7 +64,7 @@
                 </table>
             </div>
 
-            <!--Co to za zycie...-->
+            <!--Canvas for displaying two types of charts-->
             <div id="charts">
                 <div id="chart1">
                     <canvas id="piechart"></canvas>
@@ -73,9 +78,9 @@
         <!--Reference to an external JavaScript file-->
         <script src="fetchdata.js"></script>
         <script>
+            // Calling a function from fetchdata.js file
             // requestData("https://my.api.mockaroo.com/flight-logs.json?key=64d8f970");
             requestData("https://my.api.mockaroo.com/flight_logs.json?key=99413a50&fbclid=IwAR1AdflhbWp8_AmjtVDLxIO3iA-cQh3ved5eeuZ6IEQJTbESV5ZzMYKoQGs");
         </script>
-
     </body>
 </html>

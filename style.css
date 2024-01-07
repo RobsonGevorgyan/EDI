@@ -27,8 +27,12 @@ body {
     border: 2px #edf2f4 solid;
     display: flex;
     text-align: center;
-    padding-top: 2%;;
+    padding-top: 2%;
 }
+
+.author-box {
+    width: 100%;
+} 
 
 img {
     width: 60%;
@@ -37,7 +41,7 @@ img {
 }
 
 .author-name {
-    font-family: 'Oswald', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 150%;
     text-shadow: 2px 2px 5px #242424;
 }
@@ -48,12 +52,15 @@ img {
     border-radius: 15px;
     border: 2px #edf2f4 solid;
     padding: 1%;
+    overflow-y: auto;
+    height: 300px;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
 }
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
@@ -63,6 +70,8 @@ th, td {
 th {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #7a8ba8;
+    position: sticky; 
+    top: 0;
 }
 
 td {
@@ -96,4 +105,11 @@ tr:nth-child(even) {
     width: 32%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #c2c9d2;
+}
 
